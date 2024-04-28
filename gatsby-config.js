@@ -41,16 +41,6 @@ module.exports = {
     siteUrl: `https://guillaumebriday.fr`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_API_KEY,
-        indexName: process.env.ALGOLIA_INDEX_NAME,
-        queries,
-        chunkSize: 10000,
-      },
-    },
     'gatsby-transformer-yaml',
     {
       resolve: `gatsby-source-filesystem`,
